@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#e7e3db">
+  <meta name="description" content="An icon-led fluid gradient poster studio.">
+  <title>Fluid — Poster Studio</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%23171614'/%3E%3Cpath d='M16 36c7-18 14 18 21 0 3-8 8-4 11 2' fill='none' stroke='%23fbfaf7' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="./fonts/fonts.css">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <h1 class="sr-only">Fluid poster studio</h1>
+
+  <svg class="sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <defs>
+      <symbol id="i-palette" viewBox="0 0 24 24">
+        <circle cx="13.5" cy="6.5" r=".8" fill="currentColor" stroke="none"/>
+        <circle cx="17.5" cy="10.5" r=".8" fill="currentColor" stroke="none"/>
+        <circle cx="8.5" cy="7.5" r=".8" fill="currentColor" stroke="none"/>
+        <circle cx="6.5" cy="12.5" r=".8" fill="currentColor" stroke="none"/>
+        <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.93 0 1.65-.75 1.65-1.69 0-.44-.18-.83-.44-1.12-.29-.29-.44-.65-.44-1.13a1.64 1.64 0 0 1 1.67-1.67h2c3.05 0 5.55-2.5 5.55-5.55C21.97 6.01 17.46 2 12 2Z"/>
+      </symbol>
+      <symbol id="i-waves" viewBox="0 0 24 24">
+        <path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/>
+        <path d="M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/>
+        <path d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/>
+      </symbol>
+      <symbol id="i-frame" viewBox="0 0 24 24">
+        <path d="M22 6H2M22 18H2M6 2v20M18 2v20"/>
+      </symbol>
+      <symbol id="i-type" viewBox="0 0 24 24">
+        <path d="M4 7V4h16v3M9 20h6M12 4v16"/>
+      </symbol>
+      <symbol id="i-image" viewBox="0 0 24 24">
+        <rect x="3" y="3" width="18" height="18" rx="2"/>
+        <circle cx="9" cy="9" r="2"/>
+        <path d="m21 15-3.1-3.1a2 2 0 0 0-2.8 0L6 21"/>
+      </symbol>
+      <symbol id="i-image-plus" viewBox="0 0 24 24">
+        <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7M16 5h6M19 2v6"/>
+        <circle cx="9" cy="9" r="2"/>
+        <path d="m21 15-3.1-3.1a2 2 0 0 0-2.8 0L6 21"/>
+      </symbol>
+      <symbol id="i-download" viewBox="0 0 24 24">
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+      </symbol>
+      <symbol id="i-shuffle" viewBox="0 0 24 24">
+        <path d="M2 18h1.4c1.3 0 2.5-.6 3.3-1.7l6.1-8.6c.7-1.1 2-1.7 3.3-1.7H22"/>
+        <path d="m18 2 4 4-4 4"/>
+        <path d="M2 6h1.9c1.5 0 2.9.9 3.6 2.2"/>
+        <path d="M22 18h-5.9c-1.3 0-2.6-.7-3.3-1.8l-.5-.8"/>
+        <path d="m18 14 4 4-4 4"/>
+      </symbol>
+      <symbol id="i-play" viewBox="0 0 24 24">
+        <path d="M7 4.5v15l13-7.5Z" fill="currentColor" stroke="none"/>
+      </symbol>
+      <symbol id="i-pause" viewBox="0 0 24 24">
+        <rect x="6.5" y="4" width="3.5" height="16" rx="1.2" fill="currentColor" stroke="none"/>
+        <rect x="14" y="4" width="3.5" height="16" rx="1.2" fill="currentColor" stroke="none"/>
+      </symbol>
+      <symbol id="i-maximize" viewBox="0 0 24 24">
+        <path d="M8 3H5a2 2 0 0 0-2 2v3M21 8V5a2 2 0 0 0-2-2h-3M3 16v3a2 2 0 0 0 2 2h3M16 21h3a2 2 0 0 0 2-2v-3"/>
+      </symbol>
+      <symbol id="i-minimize" viewBox="0 0 24 24">
+        <path d="M8 3v3a2 2 0 0 1-2 2H3M21 8h-3a2 2 0 0 1-2-2V3M3 16h3a2 2 0 0 1 2 2v3M16 21v-3a2 2 0 0 1 2-2h3"/>
+      </symbol>
+      <symbol id="i-rotate" viewBox="0 0 24 24">
+        <path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8"/>
+        <path d="M21 3v5h-5"/>
+      </symbol>
+      <symbol id="i-grid" viewBox="0 0 24 24">
+        <rect x="3" y="3" width="18" height="18" rx="2"/>
+        <path d="M3 9h18M3 15h18M9 3v18M15 3v18"/>
+      </symbol>
+      <symbol id="i-heading" viewBox="0 0 24 24">
+        <path d="M5 20V4M19 20V4M5 12h14"/>
+      </symbol>
+      <symbol id="i-align-left" viewBox="0 0 24 24">
+        <path d="M21 6H3M15 12H3M17 18H3"/>
+      </symbol>
+      <symbol id="i-align-center" viewBox="0 0 24 24">
+        <path d="M21 6H3M17 12H7M19 18H5"/>
+      </symbol>
+      <symbol id="i-align-right" viewBox="0 0 24 24">
+        <path d="M21 6H3M21 12H9M21 18H7"/>
+      </symbol>
+      <symbol id="i-hash" viewBox="0 0 24 24">
+        <path d="M4 9h16M4 15h16M10 3 8 21M16 3l-2 18"/>
+      </symbol>
+      <symbol id="i-contrast" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="9"/>
+        <path d="M12 3a9 9 0 0 1 0 18Z" fill="currentColor" stroke="none"/>
+      </symbol>
+      <symbol id="i-sun" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="4"/>
+        <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+      </symbol>
+      <symbol id="i-moon" viewBox="0 0 24 24">
+        <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/>
+      </symbol>
+      <symbol id="i-portrait" viewBox="0 0 24 24">
+        <rect x="6.5" y="3" width="11" height="18" rx="2"/>
+      </symbol>
+      <symbol id="i-landscape" viewBox="0 0 24 24">
+        <rect x="3" y="6.5" width="18" height="11" rx="2"/>
+      </symbol>
+      <symbol id="i-aperture" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="9"/>
+        <path d="m14.31 8 5.16 8.94M9.69 8h10.32M7.38 12l5.16-8.94M9.69 16 4.53 7.06M14.31 16H3.99M16.62 12l-5.16 8.94"/>
+      </symbol>
+      <symbol id="i-orbit" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="3"/>
+        <circle cx="19" cy="5" r="1.5"/>
+        <circle cx="5" cy="19" r="1.5"/>
+        <path d="M10.4 21.9a9 9 0 0 0 9.94-14.4M13.5 2.1a9 9 0 0 0-9.84 14.4"/>
+      </symbol>
+      <symbol id="i-aurora" viewBox="0 0 24 24">
+        <path d="M3 19c2.3-8.6 4.3-11 6-5.5S13 20 15 12s3-7 6-9"/>
+        <path d="M3 12c2.3-5.3 4.3-6.8 6-3.4S13 13.2 15 8s3-4.5 6-6"/>
+      </symbol>
+      <symbol id="i-ribbon" viewBox="0 0 24 24">
+        <path d="M3 7c3.8-4 7.5 3.3 11.8.7C17.5 6.3 19 4.9 21 3"/>
+        <path d="M3 12c3.8-4 7.5 3.3 11.8.7C17.5 11.3 19 9.9 21 8"/>
+        <path d="M3 17c3.8-4 7.5 3.3 11.8.7C17.5 16.3 19 14.9 21 13"/>
+      </symbol>
+      <symbol id="i-mesh" viewBox="0 0 24 24">
+        <rect x="3" y="3" width="18" height="18" rx="3"/>
+        <path d="M3 9h18M3 15h18M9 3v18M15 3v18"/>
+      </symbol>
+      <symbol id="i-gauge" viewBox="0 0 24 24">
+        <path d="m12 14 4-4"/>
+        <path d="M3.34 19a10 10 0 1 1 17.32 0"/>
+      </symbol>
+      <symbol id="i-check" viewBox="0 0 24 24">
+        <path d="M20 6 9 17l-5-5"/>
+      </symbol>
+      <symbol id="i-trash" viewBox="0 0 24 24">
+        <path d="M3 6h18M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M10 11v6M14 11v6"/>
+      </symbol>
+      <symbol id="i-upload" viewBox="0 0 24 24">
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12"/>
+      </symbol>
+      <symbol id="i-sparkles" viewBox="0 0 24 24">
+        <path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3L12 3Z"/>
+        <path d="M5 3v4M19 17v4M3 5h4M17 19h4"/>
+      </symbol>
+      <symbol id="i-file" viewBox="0 0 24 24">
+        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/>
+        <path d="M14 2v6h6M8 13h8M8 17h5"/>
+      </symbol>
+      <symbol id="i-monitor" viewBox="0 0 24 24">
+        <rect x="2" y="4" width="20" height="14" rx="2"/>
+        <path d="M8 22h8M12 18v4"/>
+      </symbol>
+      <symbol id="i-camera" viewBox="0 0 24 24">
+        <path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3Z"/>
+        <circle cx="12" cy="13" r="3"/>
+      </symbol>
+      <symbol id="i-square" viewBox="0 0 24 24">
+        <rect x="4" y="4" width="16" height="16" rx="2"/>
+      </symbol>
+      <symbol id="i-crop" viewBox="0 0 24 24">
+        <path d="M6 2v14a2 2 0 0 0 2 2h14M18 22V8a2 2 0 0 0-2-2H2"/>
+      </symbol>
+      <symbol id="i-padding" viewBox="0 0 24 24">
+        <rect x="3" y="3" width="18" height="18" rx="3"/>
+        <rect x="8" y="8" width="8" height="8" rx="1"/>
+      </symbol>
+      <symbol id="i-mark" viewBox="0 0 24 24">
+        <path d="M3.5 14.5c2.6-7.7 6-7.7 8.5 0s5.9 7.7 8.5 0"/>
+        <circle cx="12" cy="12" r="1.2" fill="currentColor" stroke="none"/>
+      </symbol>
+      <symbol id="i-loader" viewBox="0 0 24 24">
+        <path d="M21 12a9 9 0 1 1-6.219-8.56"/>
+      </symbol>
+      <symbol id="i-chevron-down" viewBox="0 0 24 24">
+        <path d="m6 9 6 6 6-6"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <div class="app" id="app">
+    <aside class="rail" aria-label="Studio tools">
+      <div class="rail-top">
+        <div class="brand" aria-label="Fluid poster studio">
+          <svg class="icon brand-icon" aria-hidden="true"><use href="#i-mark"></use></svg>
+        </div>
+        <nav class="rail-nav" aria-label="Panels">
+          <button class="rail-button" type="button" data-panel="palette" aria-label="Color palettes" aria-pressed="false">
+            <svg class="icon" aria-hidden="true"><use href="#i-palette"></use></svg>
+          </button>
+          <button class="rail-button" type="button" data-panel="motion" aria-label="Fluid motion" aria-pressed="false">
+            <svg class="icon" aria-hidden="true"><use href="#i-waves"></use></svg>
+          </button>
+          <button class="rail-button" type="button" data-panel="format" aria-label="Canvas format" aria-pressed="false">
+            <svg class="icon" aria-hidden="true"><use href="#i-crop"></use></svg>
+          </button>
+          <button class="rail-button" type="button" data-panel="type" aria-label="Typography" aria-pressed="true">
+            <svg class="icon" aria-hidden="true"><use href="#i-type"></use></svg>
+          </button>
+        </nav>
+      </div>
+      <div class="rail-bottom">
+        <button class="rail-button rail-download" type="button" id="downloadButton" aria-label="Download poster as PNG">
+          <svg class="icon" aria-hidden="true"><use href="#i-download"></use></svg>
+        </button>
+      </div>
+    </aside>
+
+    <main class="stage" aria-label="Canvas">
+      <div class="poster-fit" id="posterFit">
+        <article class="poster tone-light" id="poster" aria-label="Poster artwork" data-layout="editorial" data-title-size="custom" style="--custom-title-size: 72px;">
+          <canvas class="fluid-canvas" id="fluidCanvas" aria-hidden="true"></canvas>
+          <div class="poster-content" id="posterContent" data-align="left">
+            <div class="poster-guides" id="posterGuides" aria-hidden="true"></div>
+            <div class="p-ornament" aria-hidden="true"></div>
+            <div class="p-meta p-editable" data-field="meta" contenteditable="plaintext-only" spellcheck="false" role="textbox" aria-label="Poster index text">STUDY 04 — MMXXVI</div>
+            <div class="p-subtitle p-editable" data-field="subtitle" contenteditable="plaintext-only" spellcheck="false" role="textbox" aria-label="Poster supporting text">Studies in motion, material and colour</div>
+            <div class="p-title p-editable" data-field="title" contenteditable="plaintext-only" spellcheck="false" role="textbox" aria-label="Poster headline">Liquid Light</div>
+          </div>
+        </article>
+      </div>
+
+      <div class="stage-toolbar" role="toolbar" aria-label="Preview controls">
+        <button class="stage-button primary" type="button" id="playToggle" aria-label="Pause fluid motion" aria-pressed="false">
+          <svg class="icon" aria-hidden="true"><use id="playIcon" href="#i-pause"></use></svg>
+        </button>
+        <button class="stage-button" type="button" id="quickRandom" aria-label="Randomize palette and motion">
+          <svg class="icon" aria-hidden="true"><use href="#i-shuffle"></use></svg>
+        </button>
+        <span class="toolbar-divider" aria-hidden="true"></span>
+        <button class="stage-button" type="button" id="focusToggle" aria-label="Enter distraction-free preview" aria-pressed="false">
+          <svg class="icon" aria-hidden="true"><use id="focusIcon" href="#i-maximize"></use></svg>
+        </button>
+      </div>
+    </main>
+
+    <aside class="inspector" aria-label="Inspector">
+      <div class="inspector-scroll">
+
+        <section class="panel" data-panel-view="palette" hidden>
+          <header class="panel-head">
+            <span class="panel-badge" aria-hidden="true"><svg class="icon"><use href="#i-palette"></use></svg></span>
+            <button class="panel-action" type="button" id="shufflePalette" aria-label="Shuffle color palette">
+              <svg class="icon" aria-hidden="true"><use href="#i-shuffle"></use></svg>
+            </button>
+          </header>
+          <div class="current-palette" id="currentPalette" aria-hidden="true"></div>
+          <div class="palette-grid" id="paletteGrid" role="group" aria-label="Color presets"></div>
+
+          <div class="hairline palette-divider"></div>
+
+          <div class="image-extract">
+            <div class="upload-empty" id="uploadEmpty">
+              <button class="drop-zone" type="button" id="dropZone" aria-label="Import an image to extract its colors">
+                <span class="drop-icon" aria-hidden="true"><svg class="icon"><use href="#i-image-plus"></use></svg></span>
+              </button>
+            </div>
+
+            <div class="image-loaded" id="imageLoaded" hidden>
+              <div class="source-grid">
+                <div class="image-preview">
+                  <img id="sourceImage" alt="">
+                </div>
+                <div class="extracted-colors" id="extractedColors" aria-hidden="true"></div>
+              </div>
+              <div class="image-actions">
+                <button class="panel-action" type="button" id="replaceImage" aria-label="Choose another image" hidden>
+                  <svg class="icon" aria-hidden="true"><use href="#i-upload"></use></svg>
+                </button>
+                <button class="panel-action" type="button" id="reapplyPalette" aria-label="Apply colors extracted from image">
+                  <svg class="icon" aria-hidden="true"><use href="#i-sparkles"></use></svg>
+                </button>
+                <button class="panel-action" type="button" id="removeImage" aria-label="Remove image">
+                  <svg class="icon" aria-hidden="true"><use href="#i-trash"></use></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel" data-panel-view="motion" hidden>
+          <header class="panel-head">
+            <span class="panel-badge" aria-hidden="true"><svg class="icon"><use href="#i-waves"></use></svg></span>
+            <button class="panel-action" type="button" id="motionPlay" aria-label="Pause fluid motion" aria-pressed="false">
+              <svg class="icon" aria-hidden="true"><use id="motionPlayIcon" href="#i-pause"></use></svg>
+            </button>
+          </header>
+          <div class="motion-grid" id="motionGrid" role="group" aria-label="Fluid presets"></div>
+          <div class="range-stack">
+            <div class="range-card">
+              <span class="range-icon" aria-hidden="true"><svg class="icon"><use href="#i-gauge"></use></svg></span>
+              <input class="range" type="range" id="speedRange" min="0" max="100" value="42" aria-label="Fluid speed">
+            </div>
+            <div class="range-card">
+              <span class="range-icon" aria-hidden="true"><svg class="icon"><use href="#i-mesh"></use></svg></span>
+              <input class="range" type="range" id="warpRange" min="0" max="100" value="50" aria-label="Fluid warp intensity">
+            </div>
+            <div class="range-card">
+              <span class="range-icon" aria-hidden="true"><svg class="icon"><use href="#i-sparkles"></use></svg></span>
+              <input class="range" type="range" id="grainRange" min="0" max="100" value="28" aria-label="Film grain">
+            </div>
+          </div>
+        </section>
+
+        <section class="panel" data-panel-view="format" hidden>
+          <header class="panel-head">
+            <span class="panel-badge" aria-hidden="true"><svg class="icon"><use href="#i-crop"></use></svg></span>
+            <div class="segmented segmented--compact" id="orientationGroup" role="group" aria-label="Orientation">
+              <button type="button" data-orientation="portrait" aria-label="Portrait orientation" aria-pressed="true">
+                <svg class="icon" aria-hidden="true"><use href="#i-portrait"></use></svg>
+              </button>
+              <button type="button" data-orientation="landscape" aria-label="Landscape orientation" aria-pressed="false">
+                <svg class="icon" aria-hidden="true"><use href="#i-landscape"></use></svg>
+              </button>
+            </div>
+          </header>
+          <div class="ratio-grid" id="ratioGrid" role="group" aria-label="Aspect ratios"></div>
+          <div class="range-card format-margin">
+            <span class="range-icon" aria-hidden="true"><svg class="icon"><use href="#i-padding"></use></svg></span>
+            <input class="range" type="range" id="marginRange" min="0" max="100" value="50" aria-label="Poster margins">
+          </div>
+          <div class="format-preview" aria-hidden="true">
+            <div class="format-sheet" id="formatSheet"></div>
+          </div>
+        </section>
+
+        <section class="panel" data-panel-view="type" hidden>
+          <header class="panel-head">
+            <span class="panel-badge" aria-hidden="true"><svg class="icon"><use href="#i-type"></use></svg></span>
+            <button class="panel-action" type="button" id="gridToggle" aria-label="Toggle layout grid" aria-pressed="false">
+              <svg class="icon" aria-hidden="true"><use href="#i-grid"></use></svg>
+            </button>
+          </header>
+
+          <div class="layout-grid" id="layoutGrid" role="group" aria-label="Typography layouts">
+            <button class="layout-option" type="button" data-layout="editorial" aria-label="Editorial layout" aria-pressed="true">
+              <span class="mini mini-editorial" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></span>
+            </button>
+            <button class="layout-option" type="button" data-layout="monolith" aria-label="Monolith layout" aria-pressed="false">
+              <span class="mini mini-monolith" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></span>
+            </button>
+            <button class="layout-option" type="button" data-layout="split" aria-label="Split layout" aria-pressed="false">
+              <span class="mini mini-split" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></span>
+            </button>
+            <button class="layout-option" type="button" data-layout="axis" aria-label="Axis layout" aria-pressed="false">
+              <span class="mini mini-axis" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></span>
+            </button>
+            <button class="layout-option" type="button" data-layout="stack" aria-label="Stack layout" aria-pressed="false">
+              <span class="mini mini-stack" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></span>
+            </button>
+            <button class="layout-option" type="button" data-layout="frame" aria-label="Frame layout" aria-pressed="false">
+              <span class="mini mini-frame" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></span>
+            </button>
+          </div>
+
+          <div class="hairline"></div>
+
+          <div class="font-groups" role="group" aria-label="Fonts and sizes">
+            <div class="font-row">
+              <span class="font-preview display" id="displayFontPreview" aria-hidden="true">Aa</span>
+              <span class="select-field">
+                <select id="displayFontSelect" aria-label="Display font"></select>
+                <svg class="icon select-caret" aria-hidden="true"><use href="#i-chevron-down"></use></svg>
+              </span>
+              <label class="size-field">
+                <span class="sr-only">Headline size, in pixels</span>
+                <input type="number" id="titleSizeInput" min="8" max="320" step="1" value="72" inputmode="numeric">
+                <span class="size-unit" aria-hidden="true">px</span>
+              </label>
+            </div>
+            <div class="font-row">
+              <span class="font-preview text" id="bodyFontPreview" aria-hidden="true">Aa</span>
+              <span class="select-field">
+                <select id="bodyFontSelect" aria-label="Text font"></select>
+                <svg class="icon select-caret" aria-hidden="true"><use href="#i-chevron-down"></use></svg>
+              </span>
+              <label class="size-field">
+                <span class="sr-only">Supporting text size, in pixels</span>
+                <input type="number" id="subtitleSizeInput" min="6" max="200" step="1" value="11" inputmode="numeric">
+                <span class="size-unit" aria-hidden="true">px</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="hairline"></div>
+
+          <div class="text-fields">
+            <label class="text-field">
+              <span class="field-icon" aria-hidden="true"><svg class="icon"><use href="#i-heading"></use></svg></span>
+              <input type="text" id="titleInput" value="Liquid Light" maxlength="72" aria-label="Headline">
+            </label>
+            <label class="text-field">
+              <span class="field-icon" aria-hidden="true"><svg class="icon"><use href="#i-align-left"></use></svg></span>
+              <input type="text" id="subtitleInput" value="Studies in motion, material and colour" maxlength="140" aria-label="Supporting text">
+            </label>
+            <label class="text-field">
+              <span class="field-icon" aria-hidden="true"><svg class="icon"><use href="#i-hash"></use></svg></span>
+              <input type="text" id="metaInput" value="STUDY 04 — MMXXVI" maxlength="48" aria-label="Poster index">
+            </label>
+          </div>
+
+          <div class="hairline"></div>
+
+          <div class="type-controls">
+            <div class="segmented" id="alignGroup" role="group" aria-label="Text alignment">
+              <button type="button" data-align="left" aria-label="Align left" aria-pressed="true">
+                <svg class="icon" aria-hidden="true"><use href="#i-align-left"></use></svg>
+              </button>
+              <button type="button" data-align="center" aria-label="Align centre" aria-pressed="false">
+                <svg class="icon" aria-hidden="true"><use href="#i-align-center"></use></svg>
+              </button>
+              <button type="button" data-align="right" aria-label="Align right" aria-pressed="false">
+                <svg class="icon" aria-hidden="true"><use href="#i-align-right"></use></svg>
+              </button>
+            </div>
+            <div class="segmented" id="toneGroup" role="group" aria-label="Text contrast">
+              <button type="button" data-tone="light" aria-label="Light text" aria-pressed="true">
+                <svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg>
+              </button>
+              <button type="button" data-tone="dark" aria-label="Dark text" aria-pressed="false">
+                <svg class="icon" aria-hidden="true"><use href="#i-moon"></use></svg>
+              </button>
+              <button type="button" data-tone="auto" aria-label="Automatic text contrast" aria-pressed="false">
+                <svg class="icon" aria-hidden="true"><use href="#i-contrast"></use></svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="range-card">
+            <span class="range-icon" aria-hidden="true"><svg class="icon"><use href="#i-contrast"></use></svg></span>
+            <input class="range" type="range" id="dimRange" min="0" max="72" value="20" aria-label="Background darkening">
+            <span class="range-end" aria-hidden="true"><svg class="icon"><use href="#i-moon"></use></svg></span>
+          </div>
+        </section>
+
+      </div>
+    </aside>
+  </div>
+
+  <input type="file" id="imageInput" accept="image/*" hidden>
+  <div class="sr-only" id="liveStatus" aria-live="polite"></div>
+
+  <script src="./vendor/html-to-image.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>

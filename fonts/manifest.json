@@ -1,0 +1,98 @@
+[
+  {
+    "family": "Instrument Serif",
+    "style": "italic",
+    "weight": "400",
+    "url": "./fonts/InstrumentSerif-400-italic.woff2",
+    "filename": "InstrumentSerif-400-italic.woff2",
+    "size": 22128
+  },
+  {
+    "family": "Instrument Serif",
+    "style": "normal",
+    "weight": "400",
+    "url": "./fonts/InstrumentSerif-400-normal.woff2",
+    "filename": "InstrumentSerif-400-normal.woff2",
+    "size": 21032
+  },
+  {
+    "family": "Cormorant Garamond",
+    "style": "italic",
+    "weight": "500",
+    "url": "./fonts/CormorantGaramond-500-italic.woff2",
+    "filename": "CormorantGaramond-500-italic.woff2",
+    "size": 39260
+  },
+  {
+    "family": "Cormorant Garamond",
+    "style": "italic",
+    "weight": "600",
+    "url": "./fonts/CormorantGaramond-600-italic.woff2",
+    "filename": "CormorantGaramond-600-italic.woff2",
+    "size": 39260
+  },
+  {
+    "family": "Cormorant Garamond",
+    "style": "normal",
+    "weight": "500",
+    "url": "./fonts/CormorantGaramond-500-normal.woff2",
+    "filename": "CormorantGaramond-500-normal.woff2",
+    "size": 37640
+  },
+  {
+    "family": "Cormorant Garamond",
+    "style": "normal",
+    "weight": "600",
+    "url": "./fonts/CormorantGaramond-600-normal.woff2",
+    "filename": "CormorantGaramond-600-normal.woff2",
+    "size": 37640
+  },
+  {
+    "family": "Syne",
+    "style": "normal",
+    "weight": "400 800",
+    "url": "./fonts/Syne-400-800-normal.woff2",
+    "filename": "Syne-400-800-normal.woff2",
+    "size": 34608
+  },
+  {
+    "family": "Archivo",
+    "style": "normal",
+    "weight": "100 900",
+    "url": "./fonts/Archivo-100-900-normal.woff2",
+    "filename": "Archivo-100-900-normal.woff2",
+    "size": 34928
+  },
+  {
+    "family": "Manrope",
+    "style": "normal",
+    "weight": "200 800",
+    "url": "./fonts/Manrope-200-800-normal.woff2",
+    "filename": "Manrope-200-800-normal.woff2",
+    "size": 24532
+  },
+  {
+    "family": "Space Grotesk",
+    "style": "normal",
+    "weight": "300 700",
+    "url": "./fonts/SpaceGrotesk-300-700-normal.woff2",
+    "filename": "SpaceGrotesk-300-700-normal.woff2",
+    "size": 22288
+  },
+  {
+    "family": "IBM Plex Mono",
+    "style": "normal",
+    "weight": "400",
+    "url": "./fonts/IBMPlexMono-400-normal.woff2",
+    "filename": "IBMPlexMono-400-normal.woff2",
+    "size": 14708
+  },
+  {
+    "family": "IBM Plex Mono",
+    "style": "normal",
+    "weight": "500",
+    "url": "./fonts/IBMPlexMono-500-normal.woff2",
+    "filename": "IBMPlexMono-500-normal.woff2",
+    "size": 14888
+  }
+]
